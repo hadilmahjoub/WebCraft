@@ -3,6 +3,8 @@ const prev = document.querySelector("#prev");
 const next = document.querySelector("#next");
 const circles = document.querySelectorAll(".circle");
 
+const lastContent = circles[circles.length - 1 ].innerHTML
+
 let currentActive = 1;
 
 next.addEventListener("click", () => {
@@ -44,8 +46,13 @@ function update() {
     prev.disabled = true;
   } else if (currentActive == circles.length) {
     next.disabled = true;
+    console.log(currentActive);
+    circles[
+      circles.length - 1
+    ].innerHTML = `<i class="fa-solid fa-check" style="color: #3498db"></i>`;
   } else {
     prev.disabled = false;
     next.disabled = false;
+    circles[circles.length - 1].innerHTML = lastContent;
   }
 }
