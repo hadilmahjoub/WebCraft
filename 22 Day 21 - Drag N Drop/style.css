@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: mediumpurple;
+    font-family: Roboto, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.empty {
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+    border: 3px solid black;
+}
+
+.fill {
+    /* background-image: url('https://source.unsplash.com/random/150x150'); */
+    background-image: url("https://images.unsplash.com/photo-1657925426569-ad97ff77fe4b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+    background-size: cover;
+    height: 145px;
+    width: 145px;
+    cursor: pointer;
+}
+
+.hold {
+    border: solid 3px #ccc;
+}
+
+.hovered {
+    background-color: #333;
+    border: dashed white;
+}
+
+@media (max-width: 800px) {
+    body {
+        flex-direction: column;
+    }
+}
