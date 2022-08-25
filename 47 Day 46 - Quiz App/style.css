@@ -12,7 +12,6 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    overflow: hidden;
     margin: 0;
 }
 
@@ -48,6 +47,10 @@ ul li label {
     cursor: pointer;
 }
 
+.buttons-container {
+    display: flex;
+}
+
 button {
     background-color: #8e44ad;
     color: white;
@@ -67,4 +70,52 @@ button:hover {
 button:focus {
     outline: none;
     background-color: #5e3370;
+}
+
+.reload-home {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 200px;
+}
+
+.reload-home button {
+    width: 100%;
+    padding: 0.8rem;
+}
+
+.false {
+    color: red;
+    font-weight: bold;
+    text-decoration: line-through;
+}
+
+.correct {
+    color: green;
+    font-weight: bold;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 0.8rem;
+    width: 1000px;
+}
+
+.cards p {
+    font-size: 1rem;
+}
+
+.card-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
+    width: 400px;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.card-header {
+    padding: 2rem;
 }
