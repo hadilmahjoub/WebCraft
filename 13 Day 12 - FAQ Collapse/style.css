@@ -64,6 +64,8 @@ h1 {
 
 .faq-title {
     margin: 0 35px 0  0;  /* only right */   /*! margin: top right buttom left */
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 
 .faq-text {

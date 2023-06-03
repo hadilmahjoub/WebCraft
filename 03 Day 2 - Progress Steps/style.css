@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Muli&display=swap");
 
 /* define custom properties (variables) */
 :root {
@@ -30,13 +30,14 @@ body {
     display: flex;
     justify-content: space-between;
     max-width: 100%;
-    width: 350px;
+    /* width: 350px; */
+    max-width: 1000px;
     position: relative;
     margin-bottom: 40px;
 }
 
 .progress-container::before {
-    content: ''; /*! ALWAYS CONTENT WHEN WE USE CSS BEFORE SELECTOR */
+    content: ""; /*! ALWAYS CONTENT WHEN WE USE CSS BEFORE SELECTOR */
     /* background-color: #e0e0e0; */
     background-color: var(--line-border-empty);
     position: absolute;
@@ -71,7 +72,7 @@ body {
     align-items: center;
     border-radius: 50%;
     border: 3px solid var(--line-border-empty);
-    transition: .4s ease;
+    transition: 0.4s ease;
 }
 
 .circle.active {
