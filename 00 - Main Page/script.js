@@ -3,7 +3,7 @@ const data = [
         id: "01",
         title: "Expanding Cards",
         alt: "expanding-cards",
-        route: "../02 Day 1 - Expanding Cards/",
+        route: "../02 Day 1 - Expanding Cards/index.html",
     },
     {
         id: "02",
