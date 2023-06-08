@@ -6,7 +6,6 @@ This is the main repository for the showcase of all the projects
 
 |  #  | Project                                                                                                                        | Live Demo                                                                                       |
 | :-: | -------------------------------------------------------------------------------------------------------------------------------| ------------------------------------------------------------------------------------------------|
-
 | 01 | [Expanding Cards](https://github.com/hadilmahjoub/WebCraft/tree/master/01%20-%20Expanding%20Cards)                              | [Live Demo](https://hadilmahjoub.github.io/WebCraft/01%20-%20Expanding%20Cards)                 |
 | 02 | [Progress Steps](https://github.com/hadilmahjoub/WebCraft/tree/master/02%20-%20Progress%20Steps)                                | [Live Demo](https://hadilmahjoub.github.io/WebCraft/02%20-%20Progress%20Steps)                  |
 | 03 | [Rotating Navigation](https://github.com/hadilmahjoub/WebCraft/tree/master/03%20-%20Rotating%20Navigation)                      | [Live Demo](https://hadilmahjoub.github.io/WebCraft/03%20-%20Rotating%20Navigation)             |
