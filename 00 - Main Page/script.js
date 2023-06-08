@@ -259,10 +259,10 @@ let text = ""
 data.forEach((e, i) => {
     const regex = new RegExp(' ', "g");
     const route = `${e.id} - ${e.title}`.replace(regex, '%20')
-    text =
-        text +
-        "\n" +
-        `| ${e.id} | [${e.title}](https://hadilmahjoub.github.io/WebCraft/${route}) | [Live Demo](https://hadilmahjoub.github.io/WebCraft/${route})`;
+    // text =
+    //     text +
+    //     "\n" +
+    //     `| ${e.id} | [${e.title}](https://github.com/hadilmahjoub/WebCraft/tree/master/${route})           | [Live Demo](https://hadilmahjoub.github.io/WebCraft/${route})           |`;
     const project = document.createElement("div");
     project.classList.add("project");
     project.innerHTML = `
@@ -281,4 +281,4 @@ data.forEach((e, i) => {
     projects.appendChild(project);
 });
 
-console.log(text);
+// console.log(text);
