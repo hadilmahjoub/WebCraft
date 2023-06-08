@@ -61,8 +61,8 @@ const data = [
     },
     {
         id: "13",
-        title: "Random Choise Picker",
-        alt: "random-choise-picker",
+        title: "Random Choice Picker",
+        alt: "random-choice-picker",
     },
     {
         id: "14",
@@ -86,7 +86,7 @@ const data = [
     },
     {
         id: "18",
-        title: "Background-slider",
+        title: "Background Slider",
         alt: "background-slider",
     },
     {
@@ -111,7 +111,7 @@ const data = [
     },
     {
         id: "23",
-        title: "Kinetic Loader",
+        title: "Kinetic CSS Loader",
         alt: "kinetic-loader",
     },
     {
@@ -201,7 +201,7 @@ const data = [
     },
     {
         id: "41",
-        title: "Verify Account Ui",
+        title: "Verify Account UI",
         alt: "verify-account-ui",
     },
     {
@@ -211,7 +211,7 @@ const data = [
     },
     {
         id: "43",
-        title: "Feedback Ui Design",
+        title: "Feedback UI Design",
         alt: "feedback-ui-design",
     },
     {
@@ -253,8 +253,16 @@ const data = [
 
 const projects = document.querySelector("#projects");
 
+let text = ""
+
 
 data.forEach((e, i) => {
+    const regex = new RegExp(' ', "g");
+    const route = `${e.id} - ${e.title}`.replace(regex, '%20')
+    text =
+        text +
+        "\n" +
+        `| ${e.id} | [${e.title}](https://hadilmahjoub.github.io/WebCraft/${route}) | [Live Demo](https://hadilmahjoub.github.io/WebCraft/${route})`;
     const project = document.createElement("div");
     project.classList.add("project");
     project.innerHTML = `
@@ -266,9 +274,11 @@ data.forEach((e, i) => {
                     <h4>
                         ${e.title}
                     </h4>
-                    <a href="https://hadilmahjoub.github.io/WebCraft/${e.id} - ${e.title}" class="btn btn-primary" target="_blank"> Live Demo</a>
+                    <a href="https://hadilmahjoub.github.io/WebCraft/${route}" class="btn btn-primary" target="_blank"> Live Demo</a>
                 </div>
     `;
 
     projects.appendChild(project);
 });
+
+console.log(text);
