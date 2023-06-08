@@ -2,7 +2,7 @@
 
 This is the main repository for the showcase of all the projects
 
-[WebCraft Webpage Link](https://hadilmahjoub.github.io/WebCraft/00%20-%20Main%20Page/)
+## [WebCraft Webpage Link](https://hadilmahjoub.github.io/WebCraft/00%20-%20Main%20Page/)
 
 |  #  | Project                                                                                                                  | Live Demo                                                                                  |
 | :-: | ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ |
